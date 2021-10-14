@@ -3,10 +3,19 @@ package com.traninr.fr.bin;
 public class Fraction {
     private int numerator;//полня экземпляра класса
     private int denominator;
+    {
+        System.out.println("logic block 1");
+    }
+    {
+        System.out.println("logic block 2");
+
+    }
+
 
     public Fraction() {
         numerator = 0;
         denominator = 1;
+        System.out.println("Fraction()");
     }
 
     public Fraction(int _numerator, int _denominator) {
@@ -16,6 +25,7 @@ public class Fraction {
             throw new RuntimeException("The denominator is 0");
         }
         denominator = _denominator;
+        System.out.println("Fraction(int _numerator, int _denominator)");
     }
 
     public void setNumerator(int _numerator) {
