@@ -9,7 +9,7 @@ public class FractionViev {
         str = print(f1);
         str = str + op;
         str = str + print(f2);
-        str = str + "a";
+        str = str + "+";
         str = str + print(rez);
 
         return str;

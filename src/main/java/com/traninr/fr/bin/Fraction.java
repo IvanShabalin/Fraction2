@@ -1,21 +1,14 @@
 package com.traninr.fr.bin;
 
 public class Fraction {
+    public static int count = 0;
+
     private int numerator;//полня экземпляра класса
     private int denominator;
-    {
-        System.out.println("logic block 1");
-    }
-    {
-        System.out.println("logic block 2");
-
-    }
-
 
     public Fraction() {
         numerator = 0;
         denominator = 1;
-        System.out.println("Fraction()");
     }
 
     public Fraction(int _numerator, int _denominator) {
@@ -25,7 +18,6 @@ public class Fraction {
             throw new RuntimeException("The denominator is 0");
         }
         denominator = _denominator;
-        System.out.println("Fraction(int _numerator, int _denominator)");
     }
 
     public void setNumerator(int _numerator) {
@@ -45,5 +37,9 @@ public class Fraction {
 
     public int getDenominator() {
         return denominator;
+    }
+
+    public static int takeCount () {
+        return count;
     }
 }
